@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kopa nat </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('https://higieneambiental.com/sites/default/files/noticies_imatges/detergentes_0.jpg');
+                min-height: 100%;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("https://www.shutterstock.com/image-vector/eco-friendly-products-house-cleaning-260nw-2129661431.jpg" ); 
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("https://www.shutterstock.com/image-vector/eco-friendly-products-house-cleaning-260nw-2129661431.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INICIO  </a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PLAN MERCADEO </a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> COMENTARIOS </a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Subtitulo</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Subtitulo</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Subtitulo</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span
+                    class="w3-hide-small">Kopa  </span> Nat </span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Kopa nat </h3>
+        <p class="w3-center"><em>Problematica   </em></p>
+        <p>El presente trabajo está constituido por el ODS número 12 el cual es producción y consumo responsable, este objetivo consiste en garantizar modalidades de consumo y producción sostenibles, reduciendo la huella ecológica mediante un cambio en los métodos de producción y consumo de bienes y recursos. Este proyecto tiene cómo fin la creación de detergentes ecológicos a base de mandarinas, naranjas y limones.  </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="http://www.planetica.org/files/u3/pez.gif" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p class="w3-center"><em>Descripción del problema </em></p>
+                <p>Los detergentes sintéticos contienen sustancias surfactantes que ayudan en la penetración, remojo, emulsificación, dispersión, solubilización y formación de espuma. Todo esto ocurre en las interfases sólido-líquido y líquido-líquido.
+</p> 
+            </div>
+        </div>
+                <p class="w3-center"><em>Justificación</em></p>
+
+        <p>El objetivo del siguiente proyecto es desarrollar un detergente a base de cáscara de mandarina como alternativa, reduciendo así la contaminación por fosfatos que provocan las marcas convencionales.</p>
+                       <p class="w3-center"><em>Objetivo General y Especificos </em></p>
+
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">⠀⠀⠀⠀⠀⠀</span><br>
+Promover el uso de detergentes ecológicos en sustitución de los tradicionales en la localidad de Suba.
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">1</span><br>
+            Elaborar e implementar el detergente ecológico en la familia Torres
+
+        </div>
+      <center>  <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">2 </span><br>
+            Evaluar los beneficios que se obtienen al utilizar los residuos de cáscaras cítricas, tanto en la vida del ser humano como en el medio ambiente
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">3</span><br>
+            Demostrar que la elaboración de detergentes ecológicos, es una alternativa a los detergentes tradicionales
+</center>
+        </div>
+
+        
+       
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide"> Plan de Mercadeo </span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">Misión y visión  </h3>
+        <p class="w3-center"><em>Misión: El objetivo del siguiente proyecto es desarrollar un detergente a base de cáscara de mandarina como alternativa, reduciendo así la contaminación por fosfatos que provocan las marcas convencionales.
+            <p>Visión: Para el año 2050 elaborar más de un producto de limpieza ecológico, generando satisfacción en nuestros clientes a través del uso de sus productos en casa, proporcionando un reconocimiento en el mercado y expandiendo nuestros productos a diversos hogares
+</p>
+</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="https://i.imgur.com/OQ8UjTf.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://i.imgur.com/JRnKnQm.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://i.imgur.com/4cjPozq.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://i0.wp.com/wokii.com/wp-content/uploads/2021/03/shutterstock-1446799205-scaled.jpg?fit=2560%2C2133&ssl=1 " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt=>
+            </div>
+        </div>
+
+      
+           
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <button.desplazado {
+        background-color: white;
+        border: black 1px solid;
+        position: relative;
+        right: 20px;
+        }
+        <a href="https://acortar.link/1DZmTN"> 
+        <button>Pagos</button> 
+      </a> 
+       </button.desplazado> 
+       
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contactanos</h3>
+        <p class="w3-center"><em></em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Carrera 112B # 142 64, Suba, Lombardía<br>
+                                       <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +57 3016400223 <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="mailto:silvanalozano@gimnasiolacima.edu.co" </a>Email:silvanalozano@gimnasiolacima.edu.co <br>
+                </div>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nombre">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Mensaje">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+ 
+    <!-- Footer end. -->
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html> 
